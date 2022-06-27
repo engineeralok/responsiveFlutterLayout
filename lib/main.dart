@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:resposiveflutterlayout/homepage.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: const HomePage(),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
   }
 }
